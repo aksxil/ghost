@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="nav">
+        <svg width="240" height="85" viewBox="0 0 240 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="h" class="logo-letter logo-letter--h text-color-letter">
+            <path id="Vector" d="M234.994 67.1764C233.756 70.7485 233.162 72.3553 228.85 71.6738C227.348 71.3885 226.698 70.2684 226.86 69.116C227.226 66.5231 227.398 65.2977 227.845 62.6428C227.917 62.1385 227.956 61.3366 228.14 60.5541C228.425 59.0513 227.817 58.1575 226.303 57.9443C224.709 57.7934 224.215 57.65 221.889 57.4689C219.419 57.2681 218.135 58.0422 218.2 59.6676C218.008 61.5508 217.918 62.7134 217.942 64.6273C218.03 67.6516 217.117 69.4331 214.547 69.9524C212.87 70.3776 209.65 70.2913 207.787 69.4408C205.007 68.3144 204.654 66.6483 204.729 63.4999C204.719 57.8417 204.999 53.7671 206.016 47.5918C206.82 42.9298 207.473 40.3773 208.843 35.8686C209.16 34.6642 210.296 31.8122 210.871 30.8645C213.281 26.7961 217.219 25.9547 220.845 28.3763C222.854 29.7613 223.084 31.7773 222.451 34.186C221.318 39.0955 221.084 40.2382 220.076 45.826C219.588 48.7699 220.175 49.2931 222.172 49.7215C224.385 50.1798 225.589 50.4969 227.925 50.6056C229.828 50.6534 230.155 49.3768 230.43 47.9462C231.356 42.9338 231.654 42.388 232.414 36.471C232.678 34.5981 233.045 33.0336 234.773 32.7629C237.901 32.4689 239.343 33.7011 239.595 36.6015C239.91 39.5845 239.311 43.8347 238.895 46.7881C238.844 47.1482 238.794 47.5084 238.743 47.8682C237.901 54.3622 236.484 60.7746 234.994 67.1764Z" fill="black"></path>
+            </g>
+            <g id="s" class="logo-letter logo-letter--s text-color-letter">
+            <path id="Vector_2" d="M205.724 24.6254C206.753 27.3696 205.823 31.053 204.583 32.938C202.374 36.0122 198.825 35.3076 197.209 34.1358C195.413 32.9181 194.452 30.6687 195.648 28.1994C195.829 27.8629 196.8 25.9093 196.218 24.8071C195.413 23.0749 193.526 22.5989 191.907 22.9546C190.895 23.1772 190.129 24.3217 189.835 25.1077C189.201 27.2413 189.715 28.6133 190.07 30.6144C190.804 34.1442 192.032 37.6076 193.576 40.9598C195.321 44.6492 197.178 48.2714 198.518 52.0496C200.172 56.4806 199.802 60.9746 198.445 65.2192C196.861 70.3621 191.663 73.1604 186.604 74.2734C184.333 74.9422 177.119 74.7472 173.285 71.0079C169.54 67.2917 168.221 64.1876 168.522 59.5807C168.592 58.5475 169.203 56.5034 169.88 55.7183C171.502 53.8343 173.052 53.7477 175.209 54.2921C178.106 55.3091 177.788 56.5672 177.738 59.0389C177.645 60.1627 177.733 61.3313 177.955 62.343C178.557 64.8843 181.05 65.6082 182.578 65.6122C183.545 65.5694 185.052 64.8977 185.639 63.3261C186.34 61.3051 185.403 58.584 183.857 55.996C181.573 52.1706 179.558 48.7946 177.071 45.0143C173.869 39.9058 171.882 33.7665 172.681 27.5652C173.46 21.072 176.077 16.3808 182.689 14.0354C185.433 13.0075 190.153 12.8605 193.837 13.7897C200.597 15.7821 204.096 19.3405 205.724 24.6254Z" fill="black"></path>
+            </g>
+            <g id="i" class="logo-letter logo-letter--i accent-color-letter">
+            <path id="Vector_3" d="M146.821 66.1288C158.254 65.5298 160.474 68.7286 161.559 74.5207C162.186 79.1637 159.259 83.5648 153.712 84.0287C149.139 84.2681 145.608 82.4308 143.706 81.1548C136.97 77.1399 139.245 66.759 146.821 66.1288ZM166.4 40.355C166.099 43.4981 164.687 50.5707 163.846 53.7498C162.726 58.4772 159.704 61.9283 153.394 61.4542C149.043 61.2011 144.114 57.5127 143.779 51.9895C143.626 50.6292 143.882 49.2101 144.009 47.7674C144.044 46.8413 146.497 28.0986 146.811 25.6237C147.079 23.4072 148.194 14.2824 148.637 11.8312C148.894 10.4116 149.279 9.01588 149.384 7.70233C149.906 2.60064 153.479 -0.218079 157.83 0.0352336C164.034 0.357058 167.894 1.85331 167.95 10.3909C168.807 21.8705 167.292 30.2569 166.4 40.355Z" fill="#CA4140"></path>
+            </g>
+            <g id="f2" class="logo-letter logo-letter--f2 text-color-letter">
+            <path id="Vector_4" d="M136.691 9.86034C137.462 10.0806 138.233 10.1908 139.004 10.4111C141.978 11.4025 142.859 12.8342 142.419 15.1474C142.088 17.24 140.656 18.8919 137.793 18.8919C135.92 18.8919 133.717 18.4514 131.845 18.4514C129.202 18.5617 128.871 18.7819 128.541 21.3151C128.43 21.6458 128.43 21.866 128.43 22.0863C127.99 26.9326 127.99 26.9326 133.056 27.4833C135.37 27.8138 137.572 28.3645 139.555 29.4659C140.987 30.1269 141.207 31.8888 140.876 33.321C140.215 35.6339 138.784 37.3963 136.36 37.5063C134.599 37.6166 131.624 37.3963 129.973 37.2861C127.769 37.0658 127.109 38.167 126.889 39.9292C126.448 44.445 127.439 48.7408 127.88 53.1468C128.1 55.1295 128.651 58.8738 128.871 61.4072C129.202 63.9409 129.642 66.8042 129.202 68.3467C128.761 69.9986 126.448 71.7607 124.245 72.6417C120.17 74.2941 115.984 75.7258 111.468 74.7346C109.706 74.2941 108.054 73.5234 107.283 70.7695C104.86 61.1872 104.64 47.4194 104.75 36.8459C104.97 30.6779 105.411 25.2809 106.072 20.7649C106.292 19.2229 107.063 15.6983 107.504 14.2667C108.605 10.9626 110.808 8.97992 114.553 8.86967C117.416 8.86967 120.17 8.86967 123.034 8.86967C127.659 8.86888 133.717 9.41961 136.691 9.86034Z" fill="black"></path>
+            </g>
+            <g id="t" class="logo-letter logo-letter--t text-color-letter">
+            <path id="Vector_5" d="M97.97 48.2565C98.5378 52.3116 99.1059 56.3669 98.7596 60.5929C98.373 65.1103 95.7267 68.1576 89.3989 68.2046C86.2977 68.3102 82.9684 67.7022 81.6171 65.0226C80.7107 63.2056 80.529 61.7264 80.2216 60.0816C79.8523 57.5967 79.6659 55.0781 79.2966 52.5938C78.6949 48.3557 77.2761 36.7036 77.079 33.6195C76.8023 29.6043 76.0382 28.0445 73.5132 28.7047C71.8111 29.2118 70.9606 28.7084 70.0183 28.2222C68.0495 26.7929 67.898 22.9436 70.5097 21.2266C71.8523 20.3136 74.2348 19.3962 75.5544 18.8662C81.8554 16.6494 83.5858 16.7993 88.1216 15.7637C90.5547 15.1206 94.6505 14.2612 96.3806 14.411C98.9507 14.4985 100.886 15.7453 100.934 19.0463C100.984 20.8342 100.144 22.4094 95.3511 23.588C93.1574 23.9975 93.5498 26.0994 93.8968 27.4534C94.7392 31.4575 94.9607 32.6456 95.7115 36.6666C96.5368 40.5797 97.4361 44.3838 97.97 48.2565Z" fill="black"></path>
+            </g>
+            <g id="a" class="logo-letter logo-letter--a text-color-letter">
+            <path id="Vector_6" d="M38.1733 46.226C38.4424 42.8114 39.2459 39.4598 40.3654 36.2064C41.8297 31.8489 43.9551 29.2559 47.6847 26.8522C49.854 25.4507 53.4912 24.7848 55.9826 24.9047C61.5122 25.2796 64.05 28.9121 66.391 33.1761C68.2857 36.5387 71.4924 46.1305 72.6007 51.569C73.3058 54.5252 74.0841 57.47 74.4975 60.4745C74.7193 62.7607 74.1025 64.9583 71.2441 65.3476C67.6678 65.929 67.5512 64.7496 66.9449 61.477C66.7076 60.0173 66.4327 58.7885 66.255 57.6939C65.9568 56.3189 65.8636 55.2852 64.3312 55.5343C61.8379 55.8648 57.7763 56.2249 54.3562 57.3049C52.8712 57.8461 52.3092 58.5362 52.3273 60.0314C52.369 61.6731 52.4722 63.2295 52.2223 64.9179C52.0336 66.5218 51.2269 67.5515 49.7537 68.1658C47.1721 69.3342 44.4615 69.2502 41.8024 68.5588C39.228 67.9282 38.2271 65.9185 37.9872 62.1375C37.8748 56.8371 37.6165 51.5598 38.1733 46.226ZM62.2162 49.4351C64.2716 49.1765 63.9734 47.8013 63.6274 46.1347C62.8276 42.5941 61.4316 39.0758 60.0934 36.3715C59.7797 35.8234 59.4775 35.348 59.1027 34.8845C58.1834 33.835 56.8678 34.4986 56.158 35.6628C55.46 36.8997 54.2068 40.2497 53.7577 43.0196C53.3615 44.7314 53.2064 47.0041 53.2214 49.3989C53.2534 50.5174 53.3739 50.7972 54.1884 50.7395C56.9872 49.9856 59.9537 49.8029 62.2162 49.4351Z" fill="black"></path>
+            </g>
+            <g id="f" class="logo-letter logo-letter--f text-color-letter">
+            <path id="Vector_7" d="M29.024 19.0817C29.7382 19.2547 30.4481 19.3274 31.1626 19.5004C33.9228 20.2981 34.7827 21.5768 34.4648 23.7112C34.2399 25.64 32.9896 27.2061 30.3675 27.3119C28.6525 27.3814 26.6187 27.0593 24.904 27.1286C22.4872 27.3276 22.1927 27.5416 21.984 29.8739C21.8953 30.1805 21.9031 30.3823 21.9115 30.5839C21.6876 35.0386 21.6876 35.0386 26.3478 35.3551C28.4782 35.5722 30.516 35.9948 32.3727 36.9301C33.7083 37.4824 33.9753 39.0881 33.7259 40.4117C33.2064 42.5545 31.96 44.2211 29.7451 44.4119C28.1352 44.5781 25.4036 44.4865 23.8869 44.4468C21.8611 44.3269 21.2968 45.3601 21.1603 46.9815C20.9243 51.1337 21.9908 55.0303 22.5573 59.0492C22.8327 60.8565 23.4758 64.2658 23.7714 66.5777C24.1677 68.8853 24.6775 71.4914 24.331 72.9199C23.9887 74.4493 21.9357 76.1492 19.9509 77.0378C16.2799 78.7012 12.5001 80.1681 8.32796 79.4276C6.69784 79.0892 5.15618 78.444 4.34794 75.951C1.77413 67.2654 1.06223 54.6652 0.771375 44.9779C0.7446 39.3212 0.9483 34.3626 1.38641 30.2025C1.53105 28.7821 2.10645 25.5258 2.45689 24.1981C3.34309 21.131 5.2869 19.234 8.71252 18.9946C11.3352 18.8882 13.857 18.7864 16.4794 18.6803C20.7161 18.5084 26.284 18.7882 29.024 19.0817Z" fill="black"></path>
+            </g>
+            <defs>
+            <clipPath id="clip0_1248_16817">
+            <rect width="240" height="85" fill="white"></rect>
+            </clipPath>
+            </defs>
+            </svg>
+            <div id="nav2">
+                <button>Explore</button>
+                <i class="ri-menu-3-line"></i>
+            </div>
+    </div>
+    <div id="cursor">
+        <div class="gola"></div>
+    </div>
+    <div id="main">
+        
+        <!-- <div id="loader">
+            <h1>Aks<span>Xil</span></h1>
+        </div> -->
+        <div id="menu">
+            <h3>HO<span>ME</span></h3>
+            <h3><span>WEB</span>-DESIGNS</h3>
+            <h3><span>WORK</span><img src="./ff_skull.svg" alt=""></h3>
+            <h3>PRO<span>JECTS</span></h3>
+        </div>
+        <div id="page1">
+            <div id="navbar">
+                <h4>Work</h4>
+                <h4>Projects</h4>
+                <h4>Contact</h4>
+                <h4>Web-App</h4>
+            </div>
+            <div id="row1" class="row rowr">
+                <h3>Ideas are best</h3>
+                <h1> <span>AKSXIL</span> AKSXIL <img src="./ff_skull.svg" alt=""> <span>AKSXIL</span> </h1>
+            </div>
+            <div id="row2" class="row">
+                <h3>Projects full of surprises</h3>
+                <h1><span>WEB WEB</span> <img src="./ff_controller-300x269.png" alt=""> WEB <span>WEB WEB</span></h1>
+            </div>
+            <div id="row3" class="row row3">
+                <h3>Best Web Services ❤️</h3>
+               <h1><span>SERVICES</span> SERVICES <img src="./ff_coffee.png" alt=""> <span>SERVICES</span></h1>
+            </div>
+            <div id="row4" class="row">
+                <img src="./arrow_loop_right.svg" alt="">
+                <h2>Want to stand out from the crowd? <br>
+                    Let us bring your project to the next level.</h2>
+                    <!-- <h4>We push the limit of creativity to reflect who <br> you are with brand</h4> -->
+            </div>
+        </div>
+        
+        <div id="page2">
+            <div id="elem">
+                <h1>That's great to hear! Aksxil web service seems to have a strong focus </h1>
+            </div>
+            <div id="elem">
+                <h1> on providing comprehensive digital solutions to its clients. With a </h1>
+            </div>
+            <div id="elem">
+                <h1> talented team and a full-service approach, you aim to support your</h1>
+            </div>
+            <div id="elem">
+                <h1>clients from the inception performance.
+                </h1>
+            </div>
+            <div id="elem">
+                <h1>you have likely valuable experience</h1>
+            </div>
+            <button id="btn">Explore Aksxil</button>
+        </div>
+        <div id="page3">
+            <video muted loop autoplay src="./SnapSave.io-Website Design Template Video Promotion - After Effects Template-(1080p)_Trim.mp4"></video>
+        </div>
+        <div id="page4">
+            <div class="line">
+                <h1 id="one">OUR PROJECTS</h1>
+            </div>
+            <div class="line">
+                <h1 id="two">ARE <span>UNIQUE,</span></h1>
+            </div>
+            <div class="line">
+                <h1 id="three">OUR CLIENTS</h1>
+            </div>
+            <div class="line">
+                <h1 id="four">ARE <span>SATISFY.</span></h1>
+            </div>
+            <div class="line"><h4 id="five">Aksxil Web Services</h4></div>
+            
+        </div>
+        <div id="page5">
+            <h1 id="f-text">AWESOME WEB <br> DESIGNS
+                 BY AKSXIL</h1>
+                 <h1 id="s-text">
+                   PROJECTS ARE <br> UNIQUQ & BEST
+                 </h1>
+            <div id="pleft">
+                <h1>SHALL WE SHOW <br> YOU WHAT WE DO?</h1>
+                <img src="./pngkey.com-white-arrow-png-143836.png" alt="">
+                <h3>here's our latest <br> projects</h3>
+                <div id="box1" class="lbox">
+                    <video loop muted autoplay src="./SnapSave.io-Web Design Promotional Video - After Effects Template-(1080p).mp4"></video>
+                </div>
+            </div>
+            <div id="pright">
+                <div id="box2" class="lbox">
+                    <video loop muted autoplay src="./SnapSave.io-New Website Promo Video - After Effects Template-(480p).mp4"></video>
+                    <h1>WANNA SEE MORE<br> PROJCETS</h1>
+                <img src="./pngkey.com-white-arrow-png-143836.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="page6">
+            <div id="vid1" class="vid">
+                <video loop muted autoplay src="./SnapSave.io-New Website Promo Video - After Effects Template-(480p).mp4"></video>
+            </div>
+            <div id="vid3" class="vid">
+                <video loop muted autoplay src="./SnapSave.io-Web Design Promotional Video - After Effects Template-(1080p).mp4"></video>
+            </div>
+            <div id="vid2" class="vid">
+                <video loop muted autoplay src="./SnapSave.io-Website Design Template Video Promotion - After Effects Template-(1080p)_Trim.mp4"></video>
+            </div>
+
+            <div class="p1scroll">
+                <h1>AKSXIL<sup>4</sup> AKSXIL<sup>4</sup> <span>AKSXIL<sup>4</sup></span> AKSXIL<sup>4</sup> AKSXIL<sup>4</sup></h1>
+                <h1>AKSXIL<sup>4</sup> AKSXIL<sup>4</sup> <span>AKSXIL<sup>4</sup></span> AKSXIL<sup>4</sup> AKSXIL<sup>4</sup></h1>
+            </div>
+            <div class="pscroll">
+                <h1><span>WEB<sup>7</sup></span> WEB<sup>7</sup> WEB<sup>7</sup> <span>WEB<sup>7</sup></span> WEB<sup>7</sup> WEB<sup>7</sup></h1>
+                <h1><span>WEB<sup>7</sup></span> WEB<sup>7</sup> WEB<sup>7</sup> <span>WEB<sup>7</sup></span> WEB<sup>7</sup> WEB<sup>7</sup></h1>
+            </div>
+            <div class="p3scroll">
+                <h1>SERVICES<sup>11</sup> <span>SERVICES<sup>11</sup></span> SERVICES<sup>11</sup> SERVICES<sup>11</sup></h1>
+                <h1>SERVICES<sup>11</sup> <span>SERVICES<sup>11</sup></span> SERVICES<sup>11</sup> SERVICES<sup>11</sup></h1>
+            </div>
+        </div>
+        <div id="page8">
+            <div id="elem">
+                <h1>Over the course of 15 years, you have likely gained valuable experience</h1>
+            </div>
+            <div id="elem">
+                <h1> and expertise in various areas of digital services. Your team's capabilities and </h1>
+            </div>
+            <div id="elem">
+                <h1> skills enable you to handle all aspects of a project,</h1>
+            </div>
+            <div id="elem">
+                <h1>which can be highly beneficial for clients who prefer a 
+                </h1>
+            </div>
+            <div id="elem">
+                <h1>single point of  digital needs</h1>
+            </div>
+            <button id="btn">LET'S TALK</button>
+        </div>
+        <div id="page7">
+            <div class="rowi">
+                <h1 id="fst"> <span>LET'S WORK</span> LET'S WORK <img src="./ff_bock.svg" alt=""></h1>
+            </div>
+            <div class="rowi">
+                <h1 id="scn">WITH AKSXIL? <span>WITH AKSXIL?</span></h1>
+            </div>
+            <div id="lst" class="rowi">
+                <img src="./ff_fish.svg" alt="">
+                <h4><span>Contact us</span>, For any type or Web Development</h4>
+                <!-- <img src="./ff_hawks.svg" alt=""> -->
+            </div>
+            <div id="contact" class="rowi">
+             <h2>+91910000000 <br>
+                aksx7@gmail.com
+            </h2>
+            <h2>PREM NAGAR <br>
+                BALAGHAT , MP
+            </h2>
+            <img src="./ff_hawks.svg" alt="">
+            </div>
+            <div id="footer">
+                <h3>Created with ❤️ By Aks</h3>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

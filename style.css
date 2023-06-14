@@ -1,0 +1,818 @@
+@font-face {
+    font-family: ghost;
+    src: url(./vertopal.com_BngMUXZYTXPIvIBgJJSb6ufN5qU.otf);
+}
+
+@font-face {
+    font-family: interg;
+    src: url(./vertopal.com_IntegralCF-Heavy.otf);
+}
+
+@font-face {
+    font-family: interg-b;
+    src: url(./vertopal.com_IntegralCF-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: aus;
+    src: url(./vertopal.com_SouthAustralia-Regular.otf);
+}
+
+@font-face {
+    font-family: fa;
+    src: url(/vertopal.com_fa-brands-400.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    cursor: none;
+}
+
+#main {
+    position: relative;
+}
+#cursor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: all linear .1s;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+    pointer-events: none;
+}
+
+
+#loader {
+    /* display: none; */
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    position: absolute;
+    
+}
+
+#loader h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-family: anurati;
+    color: white;
+}
+
+#loader h1 span {
+    font-family: voyage;
+    color: rgb(70, 255, 159);
+}
+#menu{
+    position: absolute;
+    height: 0vh;
+    width: 100%;
+    background-color: rgb(63, 63, 63);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .8s;
+    overflow: hidden
+}
+#menu h3{
+    font-family: voyage;
+    font-size: 9vw;
+    line-height: 110px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+#menu h3::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: .1vw;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: all ease 1s;
+}
+#menu h3:hover::after {
+    width: 100%;
+}
+#menu h3 span{
+    color:rgb(0, 0, 0);
+    -webkit-text-stroke: 1px white;
+    font-family: voyage;
+}
+#menu h3 img{
+    height: 8vw;
+    animation-name: animx;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page2 h1 {
+    font-family: fa;
+    font-size: 2.5vw;
+    font-weight: 100;
+    text-align: center;
+    /* background-color: blue; */
+    color: #969696;
+}
+
+#elem {
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+#page2 button {
+    margin-top: 5vw;
+    padding: 1vw 5vw;
+    background-color: #CA4140;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.8vw;
+    font-family: voyage;
+    color: white;
+    font-weight: 100;
+}
+
+#nav {
+    height: 7vw;
+    width: 100%;
+    /* background-color: rgb(255, 161, 161); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2.5vw;
+    position: fixed;
+    z-index: 999;
+}
+
+#nav button {
+    padding: .6vw 3vw;
+    border-radius: 30px;
+    border: none;
+    background-color: #CA4140;
+    font-family: voyage;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vw;
+    transition: all ease .6s;
+}
+
+#nav svg {
+    height: 3vw;
+    margin-left: -30px;
+}
+
+#nav2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#nav2 i {
+    font-size: 1.7vw;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1vw 1.1vw;
+}
+
+#navbar {
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20vw;
+    font-family: interg;
+    gap: 3vw;
+}
+
+#navbar h4 {
+    font-family: ghost;
+    font-weight: 100;
+    font-size: 1vw;
+    color: #6c6c6c;
+}
+#nav button:hover{
+    background-color: rgb(85, 1, 1);
+    /* color: black; */
+}
+
+.row {
+    position: relative;
+    height: 10vw;
+    width: 150%;
+    /* background-color: #CA4140; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid white;
+
+}
+
+.rowr {
+    margin-top: 50px;
+}
+
+.row h1 {
+    margin-left: -20vw;
+    font-size: 8vw;
+    font-family: interg-b;
+    font-weight: 100;
+    line-height: .1;
+    transition: all ease .3s;
+}
+
+.row h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(236, 236, 236);
+    font-family: interg-b;
+    transition: all ease .3s;
+}
+
+.row h1 img {
+    margin-top: 10px;
+    height: 8vw;
+    animation-name: animx;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all ease .1s;
+}
+
+@keyframes animx {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+        rotate: -3deg;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        rotate: 3deg;
+    }
+}
+
+.row h1:hover {
+    color: #CB413F;
+    opacity: 1;
+}
+
+.row h1:hover span {
+    color: #e5e5e5;
+    -webkit-text-stroke: 0;
+    transition: all ease 1s;
+}
+
+.row h3 {
+    position: absolute;
+    right: 60%;
+    top: 40%;
+    font-family: aus;
+    color: #CAB99A;
+    font-weight: 100;
+    opacity: 0;
+    transition: all ease .3s;
+    pointer-events: none;
+    font-size: 1.3vw;
+    z-index: 99;
+}
+
+
+#row4 {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vw;
+    position: relative;
+}
+
+/* #row4 .contenr{
+    margin-top: 100px;
+    height: 90%;
+    width: 30%;
+    background-color: white;
+    overflow: visible;
+} */
+#row4 img {
+    height: 2.5vw;
+    transform: scaleY(-1);
+    rotate: 20deg;
+    margin-top: -3vw;
+    /* margin-right: 350px; */
+}
+
+#row4 h2 {
+    padding-left: 2vw;
+    font-size: 1.5vw;
+    font-family: ghost;
+    color: rgb(49, 49, 49);
+    font-weight: 100;
+    transition: all ease .3s;
+
+}
+
+.gola {
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all linear .1s;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+#page3 video {
+    height: 100vh;
+    width: 30%;
+    object-fit: cover;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: all ease .4s;
+}
+
+#page4 .line {
+    height: 7vw;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+}
+
+#page4 .line h1 {
+    position: absolute;
+    font-size: 6.5vw;
+    font-family: interg;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+}
+
+#page4 .line h1 span {
+    font-family: interg;
+    color: #CA4140;
+    mix-blend-mode: initial;
+}
+
+#one,
+#three {
+    left: 0%;
+}
+
+#two,
+#four {
+    right: 0%;
+}
+
+#five {
+    font-weight: 100;
+    font-size: 1.5vw;
+    font-family: aus;
+    color: #CAB99A;
+    position: fixed;
+    right: 20%;
+}
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0 7.5vw;
+    justify-content: space-between;
+    position: relative;
+}
+
+#pleft {
+    height: 150vh;
+    width: 40%;
+    /* background-color: red; */
+}
+
+#pright {
+    height: 150vh;
+    width: 40%;
+    /* background-color: rgb(225, 255, 0); */
+}
+
+#pleft h1 {
+    font-family: interg;
+    font-size: 3vw;
+    color: white;
+}
+
+#pleft img {
+    margin-top: 3vw;
+    margin-left: 3vw;
+    height: 2.6vw;
+    rotate: 40deg;
+}
+
+#pleft h3 {
+    margin-left: 4vw;
+    margin-top: -1vw;
+    font-family: aus;
+    color: #CAB99A;
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.2vw;
+    rotate: -5deg;
+}
+
+#pleft .lbox {
+    margin-top: 3vw;
+    height: 90vh;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#pleft .lbox video {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#pright .lbox {
+    margin-top: 4vw;
+    height: 90vh;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#pright .lbox video {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page5 #f-text {
+    position: absolute;
+    font-size: 6vw;
+    font-family: interg;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    /* left: 0;
+    top: 0; */
+    transition: all ease .4s;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#page5 #s-text {
+    position: absolute;
+    font-size: 6vw;
+    font-family: interg;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    /* left: 0;
+    top: 0; */
+    transition: all ease .4s;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#pright h1 {
+    margin-top: 10vw;
+    font-family: interg;
+    font-size: 3vw;
+    color: white;
+}
+
+#pright img {
+    margin-top: 3vw;
+    margin-left: 3vw;
+    height: 2.6vw;
+    rotate: -40deg;
+    transform: scaleX(-1);
+}
+
+#page6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #222222;
+    position: relative;
+}
+
+.p1scroll h1 span,
+.p3scroll h1 span {
+    font-family: interg;
+    color: #ffffff;
+}
+
+.pscroll h1 span {
+    font-family: interg;
+    color: #ffffff;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.pscroll {
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.pscroll h1 {
+    margin-left: 10px;
+    font-size: 10vw;
+    white-space: nowrap;
+    font-size: 9vw;
+    white-space: nowrap;
+    font-family: interg;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    animation-name: anim;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    mix-blend-mode: difference;
+    /* animation-play-state: paused; */
+
+}
+
+.p1scroll {
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.p1scroll h1 {
+    margin-left: 10px;
+    font-size: 10vw;
+    white-space: nowrap;
+    font-size: 9vw;
+    white-space: nowrap;
+    font-family: interg;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    animation-name: anim;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    mix-blend-mode: difference;
+    /* animation-direction: reverse; */
+}
+
+.p3scroll {
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.p3scroll h1 {
+    margin-left: 10px;
+    font-size: 10vw;
+    white-space: nowrap;
+    font-size: 9vw;
+    white-space: nowrap;
+    font-family: interg;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    animation-name: anim;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    mix-blend-mode: difference;
+}
+
+sup {
+    font-size: 5vw;
+    color: white;
+}
+
+#page6 .vid {
+    position: absolute;
+    height: 13vw;
+    width: 20vw;
+    left: 0;
+    top: 0;
+    transition: all linear .3s;
+    pointer-events: none;
+    border: 1px solid white;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    animation-name: animx;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#vid2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#page6 .vid video {
+    height: 13vw;
+    width: 20vw;
+    object-fit: cover;
+}
+
+#page7 {
+    padding-top: 8vw;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+#page7 .rowi{
+    height: 8.5vw;
+    width: 140%;
+    /* background-color: red; */
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: red; */
+}
+.rowi h1{
+    font-size: 8vw;
+    position: absolute;
+    font-family: interg;
+    white-space: nowrap;
+}
+.rowi h1 span{
+    font-family: interg;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+#fst{
+    left: -70vw;
+}
+#scn{
+    right: -40vw;
+}
+.rowi img{
+    height: 9vw;
+    animation-name: animx;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#lst{
+    padding-left: 10vw;
+}
+.rowi h4{
+    padding-left: 5vw;
+    font-family: ghost;
+    font-size: 2vw;
+    font-weight: 100;
+    color: #969696;
+}
+.rowi h4 span{
+    color: #CA4140;
+    text-decoration: underline;
+    animation-name: animx;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#page8 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page8 h1 {
+    font-family: fa;
+    font-size: 2.5vw;
+    font-weight: 100;
+    text-align: center;
+    /* background-color: blue; */
+    color: #969696;
+    
+}
+
+#page8 #elem {
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+#page8 button {
+    margin-top: 5vw;
+    padding: 1vw 5vw;
+    background-color: #CA4140;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.8vw;
+    font-family: voyage;
+    color: white;
+    font-weight: 100;
+}
+#contact{
+    padding-left: 25vw;
+}
+#contact img{
+    margin-left: 37vw;
+    margin-top: 4vw;
+}
+#contact h2{
+    font-family: ghost;
+    font-size: 1.3vw;
+    color: #969696;
+    margin-left: 4vw;
+    font-weight: 100;
+}
+#footer{
+    margin-top: 2vw;
+    height: 3.5vw;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer h3{
+    font-family: anurati;
+    color: white;
+    font-size: 1.5vw;
+    /* font-style: italic; */
+}
